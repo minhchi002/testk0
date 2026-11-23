@@ -15,8 +15,6 @@ Dự án này phân tích bộ dữ liệu thực tế gồm gần **100.000 đ�
 * **Quy mô:** 9 bảng dữ liệu quan hệ (Orders, Order Items, Customers, Sellers, Products, Payments, Reviews, Geolocation, Category Translation).
 * **Kiến trúc dữ liệu:** Được chuẩn hóa theo mô hình **Star Schema** (Sơ đồ hình sao) với bảng Fact trung tâm là `fact_orders` / `fact_order_items` kết nối với các bảng Dimension (`dim_customers`, `dim_products`, `dim_sellers`, `dim_date`).
 
-> *(Gợi ý: Chèn hình ảnh sơ đồ ERD / Data Model của bạn tại đây)*
-> `![Data Model](link-anh-erd-cua-ban.png)`
 
 ---
 
@@ -28,7 +26,6 @@ Dự án này phân tích bộ dữ liệu thực tế gồm gần **100.000 đ�
 ---
 
 ## 💡 4. Những Phát Hiện Chính (Key Insights)
-*(Bạn hãy điều chỉnh các con số dưới đây cho khớp với kết quả phân tích của mình)*
 
 * **📈 Tăng trưởng & Mùa vụ:** Doanh thu tăng trưởng mạnh qua các năm, đạt đỉnh vào tháng 11/2017 (sự kiện Black Friday). Nhóm ngành *Bed Bath Table*, *Health Beauty*, và *Sports Leisure* chiếm tỷ trọng doanh thu cao nhất.
 * **🚚 Vấn đề vận chuyển & Đánh giá:** Có sự tương quan nghịch rõ rệt giữa thời gian giao hàng trễ và điểm đánh giá. Các đơn hàng giao trễ có điểm đánh giá trung bình dưới **2.0/5.0**, trong khi đơn giao đúng hạn đạt trên **4.3/5.0**.
@@ -45,10 +42,6 @@ Dự án này phân tích bộ dữ liệu thực tế gồm gần **100.000 đ�
 ---
 
 ## 📊 6. Tổng Quan Dashboard (Dashboard Preview)
-> *(Gợi ý: Chèn ảnh chụp màn hình Dashboard Power BI/Tableau hoặc link xem trực tiếp tại đây)*
-> `![Dashboard Preview](link-anh-dashboard-cua-ban.png)`
-
----
 
 ## 📁 7. Cấu Trúc Thư Mục (Repository Structure)
 ```text
