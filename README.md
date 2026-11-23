@@ -1,9 +1,4 @@
 # 🛒 Phân Tích Dữ Liệu Thương Mại Điện Tử Olist (Brazil)
-
-![Status](https://shields.io)
-![Tools](https://shields.io)
-![Dataset](https://shields.io)
-
 ## 📌 1. Tổng Quan Dự Án (Project Overview)
 Dự án này phân tích bộ dữ liệu thực tế gồm gần **100.000 đơn hàng** từ [Olist](https://olist.com "Olist official website") — nền tảng kết nối các doanh nghiệp vừa và nhỏ với các sàn thương mại điện tử lớn tại Brazil (giai đoạn 2016–2018). 
 
