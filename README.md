@@ -38,15 +38,3 @@ Dự án này phân tích bộ dữ liệu thực tế gồm gần **100.000 đ�
 1. **Tối ưu chuỗi cung ứng & Logistics:** Thiết lập cảnh báo sớm cho các tuyến vận chuyển liên bang có tỷ lệ trễ cao (đặc biệt khu vực Đông Bắc Brazil); áp dụng chính sách phạt/thưởng SLA đối với đơn vị vận chuyển và nhà bán hàng.
 2. **Chiến lược giữ chân khách hàng (Retention):** Triển khai chương trình khách hàng thân thiết (Loyalty Program) và gửi mã giảm giá tự động sau 30 ngày kể từ đơn hàng đầu tiên để kích thích mua lặp lại.
 3. **Cải thiện dịch vụ hậu mãi:** Chủ động gửi thông báo xin lỗi kèm voucher cho các đơn hàng có nguy cơ giao trễ trước khi khách hàng để lại đánh giá 1 sao.
-
----
-
-## 📊 6. Tổng Quan Dashboard (Dashboard Preview)
-
-## 📁 7. Cấu Trúc Thư Mục (Repository Structure)
-```text
-├── data/                   # Dữ liệu thô và dữ liệu đã làm sạch (hoặc link tải)
-├── notebooks/              # Jupyter Notebooks chứa mã nguồn EDA & RFM (Python)
-├── sql_queries/            # Các file truy vấn SQL phân tích nghiệp vụ
-├── dashboard/              # File báo cáo Power BI (.pbix) và hình ảnh minh họa
-└── README.md               # Tài liệu tổng quan dự án
