@@ -1,62 +1,64 @@
-# 📊 Phân Tích Dữ Liệu Thương Mại Điện Tử Olist (Brazilian E-Commerce)
+# 🛒 Phân Tích Dữ Liệu Thương Mại Điện Tử Olist (Brazil)
 
-Dự án thực hiện quy trình làm sạch, xử lý và phân tích chuyên sâu bộ dữ liệu thương mại điện tử **Olist** (Brazil) nhằm đánh giá tình hình kinh doanh, hành vi thanh toán, hiệu suất vận chuyển và mức độ hài lòng của khách hàng.
+![Status](https://shields.io)
+![Tools](https://shields.io)
+![Dataset](https://shields.io)
+
+## 📌 1. Tổng Quan Dự Án (Project Overview)
+Dự án này phân tích bộ dữ liệu thực tế gồm gần **100.000 đơn hàng** từ [Olist](https://olist.com "Olist official website") — nền tảng kết nối các doanh nghiệp vừa và nhỏ với các sàn thương mại điện tử lớn tại Brazil (giai đoạn 2016–2018). 
+
+**Mục tiêu cốt lõi:**
+* Đánh giá toàn diện hiệu suất kinh doanh, doanh thu và cơ cấu ngành hàng.
+* Phân tích hành vi mua sắm, giữ chân khách hàng (Cohort) và phân khúc giá trị (RFM).
+* Xác định các nút thắt trong quy trình vận hành, đặc biệt là tỷ lệ giao hàng trễ ảnh hưởng đến mức độ hài lòng (Review Score).
+* Đề xuất giải pháp cải thiện trải nghiệm khách hàng và tối ưu hóa doanh thu dựa trên dữ liệu.
 
 ---
 
-## 🎯 Mục Tiêu Phân Tích
+## 📂 2. Nguồn Dữ Liệu & Mô Hình Hóa (Dataset & Data Modeling)
+* **Nguồn dữ liệu:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce "Brazilian E-Commerce Public Dataset by Olist Kaggle") trên [Kaggle](https://www.kaggle.com/ "Kaggle official website").
+* **Quy mô:** 9 bảng dữ liệu quan hệ (Orders, Order Items, Customers, Sellers, Products, Payments, Reviews, Geolocation, Category Translation).
+* **Kiến trúc dữ liệu:** Được chuẩn hóa theo mô hình **Star Schema** (Sơ đồ hình sao) với bảng Fact trung tâm là `fact_orders` / `fact_order_items` kết nối với các bảng Dimension (`dim_customers`, `dim_products`, `dim_sellers`, `dim_date`).
 
-* **Làm sạch & Chuẩn hóa dữ liệu:** Phát hiện và xử lý các giá trị ngoại lệ (outliers), dữ liệu thiếu, và chuẩn hóa thông tin địa lý.
-* **Phân tích Doanh thu & Ngành hàng:** Theo dõi biến động doanh thu theo thời gian, khung giờ đặt hàng và xác định nhóm ngành hàng chủ lực (quy luật Pareto).
-* **Hành vi Thanh toán:** Đánh giá tỷ trọng các phương thức thanh toán và xu hướng trả góp qua thẻ tín dụng.
-* **Hiệu suất Giao hàng & Đánh giá (Review):** Đo lường thời gian giao hàng theo vùng/bang, tỷ lệ giao trễ và tác động của việc giao trễ đến điểm đánh giá của khách hàng.
+> *(Gợi ý: Chèn hình ảnh sơ đồ ERD / Data Model của bạn tại đây)*
+> `![Data Model](link-anh-erd-cua-ban.png)`
 
 ---
 
-## 📂 Cấu Trúc Thư Mục
+## 🛠️ 3. Công Cụ & Quy Trình Thực Hiện (Tech Stack & Workflow)
+1. **Làm sạch & Khám phá dữ liệu (Data Cleaning & EDA):** Sử dụng **Python (Pandas, NumPy)** / **SQL (PostgreSQL)** để xử lý giá trị khuyết thiếu (null), chuẩn hóa định dạng ngày tháng và loại bỏ dữ liệu ngoại lai.
+2. **Truy vấn & Phân tích chuyên sâu (Data Analysis):** Viết các truy vấn SQL phức tạp (CTE, Window Functions) để tính toán chỉ số RFM, tỷ lệ giữ chân khách hàng và thời gian giao hàng thực tế so với dự kiến.
+3. **Trực quan hóa dữ liệu (Data Visualization):** Xây dựng Dashboard tương tác trên **Power BI** (sử dụng hàm **DAX** để tạo các KPI động) giúp theo dõi hiệu suất theo thời gian thực.
 
+---
+
+## 💡 4. Những Phát Hiện Chính (Key Insights)
+*(Bạn hãy điều chỉnh các con số dưới đây cho khớp với kết quả phân tích của mình)*
+
+* **📈 Tăng trưởng & Mùa vụ:** Doanh thu tăng trưởng mạnh qua các năm, đạt đỉnh vào tháng 11/2017 (sự kiện Black Friday). Nhóm ngành *Bed Bath Table*, *Health Beauty*, và *Sports Leisure* chiếm tỷ trọng doanh thu cao nhất.
+* **🚚 Vấn đề vận chuyển & Đánh giá:** Có sự tương quan nghịch rõ rệt giữa thời gian giao hàng trễ và điểm đánh giá. Các đơn hàng giao trễ có điểm đánh giá trung bình dưới **2.0/5.0**, trong khi đơn giao đúng hạn đạt trên **4.3/5.0**.
+* **👥 Chân dung & Giữ chân khách hàng:** Tỷ lệ khách hàng quay lại mua lần 2 rất thấp (**< 3%**), cho thấy Olist đang phụ thuộc lớn vào việc tìm kiếm khách hàng mới thay vì khai thác tệp khách hàng cũ.
+* **💳 Hành vi thanh toán:** Hơn **73%** giao dịch được thanh toán qua thẻ tín dụng (Credit Card) với xu hướng trả góp nhiều kỳ cho các đơn hàng giá trị cao.
+
+---
+
+## 🎯 5. Đề Xuất Giải Pháp (Business Recommendations)
+1. **Tối ưu chuỗi cung ứng & Logistics:** Thiết lập cảnh báo sớm cho các tuyến vận chuyển liên bang có tỷ lệ trễ cao (đặc biệt khu vực Đông Bắc Brazil); áp dụng chính sách phạt/thưởng SLA đối với đơn vị vận chuyển và nhà bán hàng.
+2. **Chiến lược giữ chân khách hàng (Retention):** Triển khai chương trình khách hàng thân thiết (Loyalty Program) và gửi mã giảm giá tự động sau 30 ngày kể từ đơn hàng đầu tiên để kích thích mua lặp lại.
+3. **Cải thiện dịch vụ hậu mãi:** Chủ động gửi thông báo xin lỗi kèm voucher cho các đơn hàng có nguy cơ giao trễ trước khi khách hàng để lại đánh giá 1 sao.
+
+---
+
+## 📊 6. Tổng Quan Dashboard (Dashboard Preview)
+> *(Gợi ý: Chèn ảnh chụp màn hình Dashboard Power BI/Tableau hoặc link xem trực tiếp tại đây)*
+> `![Dashboard Preview](link-anh-dashboard-cua-ban.png)`
+
+---
+
+## 📁 7. Cấu Trúc Thư Mục (Repository Structure)
 ```text
-├── archive/                                      # Dữ liệu gốc (Raw Data từ Kaggle Olist)
-│   ├── olist_customers_dataset.csv
-│   ├── olist_geolocation_dataset.csv
-│   ├── olist_order_items_dataset.csv
-│   ├── olist_order_payments_dataset.csv
-│   ├── olist_order_reviews_dataset.csv
-│   ├── olist_orders_dataset.csv
-│   ├── olist_products_dataset.csv
-│   ├── olist_sellers_dataset.csv
-│   └── product_category_name_translation.csv
-│
-└── ketqua/                                       # Kết quả phân tích và trực quan hóa
-    ├── DT09_Phan_Tich_Olist.ipynb                # Mã nguồn chính (Jupyter Notebook)
-    ├── bang_ket_qua/                             # Các bảng tổng hợp chỉ số (CSV & JSON)
-    ├── du_lieu_xu_ly/                            # Dữ liệu đơn hàng & sản phẩm sau làm sạch
-    └── hinh/                                     # 14 biểu đồ trực quan hóa kết quả phân tích
-```
-
----
-
-## 🛠️ Công Cụ & Thư Viện Sử Dụng
-
-* **Ngôn ngữ:** Python
-* **Môi trường:** Jupyter Notebook
-* **Thư viện xử lý & trực quan hóa:** `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`
-
----
-
-## 📈 Các Hạng Mục Kết Quả Chính
-
-1. **Tiền xử lý dữ liệu:** Ghi nhận nhật ký làm sạch (`02_nhat_ky_lam_sach.csv`), đối chiếu trước/sau làm sạch và xử lý ngoại lệ về số tiền.
-2. **Kinh doanh & Sản phẩm:** Phân tích doanh thu theo tháng, khung giờ cao điểm và Top 10 ngành hàng đóng góp doanh thu lớn nhất.
-3. **Vận hành & Logistics:** Thống kê thời gian giao hàng trung bình theo bang/vùng, tỷ lệ đơn giao trễ và mối tương quan trực tiếp với điểm đánh giá sao từ khách hàng.
-
----
-
-## 🚀 Hướng Dẫn Chạy Dự Án
-
-1. Clone kho lưu trữ về máy:
-   ```bash
-   git clone https://github.com
-   ```
-2. Mở file `ketqua/DT09_Phan_Tich_Olist.ipynb` bằng **Jupyter Notebook**, **VS Code** hoặc **Google Colab**.
-3. Đảm bảo đường dẫn trỏ đúng tới thư mục `archive/` và chạy lần lượt các cell từ trên xuống dưới.
+├── data/                   # Dữ liệu thô và dữ liệu đã làm sạch (hoặc link tải)
+├── notebooks/              # Jupyter Notebooks chứa mã nguồn EDA & RFM (Python)
+├── sql_queries/            # Các file truy vấn SQL phân tích nghiệp vụ
+├── dashboard/              # File báo cáo Power BI (.pbix) và hình ảnh minh họa
+└── README.md               # Tài liệu tổng quan dự án
