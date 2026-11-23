@@ -1,0 +1,19 @@
+﻿Bảng,Vấn đề phát hiện,Số dòng/ô ảnh hưởng,Cách xử lý
+orders,5 cột ngày đang là chuỗi (str/object),99441,ép sang datetime64 bằng pd.to_datetime (mỗi cột 99.441 giá trị)
+orders,delivered nhưng thiếu ngày giao thực tế,8,"giữ đơn trong phân tích doanh thu, loại khỏi phân tích thời gian giao hàng"
+orders,"đơn chưa/không hoàn tất (shipped, canceled, ...)",2963,không tính vào doanh thu; chỉ phân tích đơn delivered
+orders,khóa order_id trùng,0,không có - khóa chính hợp lệ
+payments,"payment_type = not_defined (giá trị 0, đơn hủy)",3,loại bỏ các dòng này
+payments,payment_installments = 0,2,gán = 1 (trả một lần)
+payments,payment_value = 0 (voucher),6,giữ nguyên - voucher 0đ không ảnh hưởng tổng tiền
+items,price <= 0 hoặc freight < 0,0,không có
+items,freight_value = 0 (miễn phí vận chuyển),383,giữ nguyên - là chương trình free ship thật
+products,thiếu product_category_name,610,gán nhãn 'unknown'
+products,ngành hàng chưa có bản dịch,2,bổ sung thủ công vào bảng dịch
+customers,customer_id trùng,0,"không có; lưu ý customer_id là mã theo đơn, customer_unique_id mới là khách thật"
+reviews,một đơn có nhiều đánh giá (trùng order_id),551,giữ đánh giá mới nhất mỗi đơn
+items/payments,"ngoại lệ số tiền theo IQR (price, freight, payment_value)",28021,"GIỮ LẠI vì là đơn giá trị cao có thật (đồ nội thất, thiết bị); dùng trung vị và thang log khi mô tả"
+orders,chặng 'carrier_days' âm: giao cho ĐVVC trước khi đơn được duyệt,1350,đặt carrier_days = NaN cho các đơn này (giữ lại delivery_days)
+orders,chặng 'transit_days' âm: khách nhận hàng trước khi ĐVVC lấy hàng,23,đặt transit_days = NaN cho các đơn này (giữ lại delivery_days)
+orders,thời gian giao hàng quá dài (ngoại lệ IQR),4896,giữ lại (phản ánh sự cố giao hàng thật); dùng trung vị/P90
+orders,đơn delivered thiếu/sai ngày giao (loại khỏi phân tích thời gian giao),8,gắn cờ valid_delivery = False

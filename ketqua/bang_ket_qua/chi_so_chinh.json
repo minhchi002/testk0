@@ -1,0 +1,624 @@
+{
+ "noi_sai_pay_pct": 28.16,
+ "noi_sai_price_pct": 4.54,
+ "noi_sai_so_dong": 117601,
+ "noi_dung_so_dong": 98665,
+ "noi_sai_tong_pay": 20308135.0,
+ "noi_dung_tong_pay": 15846280.0,
+ "vd_don": {
+  "order_id": "895ab968e7bb0d5659d16cd74cd1650c",
+  "n_items": 3,
+  "n_pay": 21,
+  "n_dong": 63
+ },
+ "khop_payment_gmv_pct": 99.6,
+ "payment_over_gmv_pct": 100.02,
+ "n_mask_loc": 31,
+ "n_query_cc500": 1931,
+ "n_bf_11days": 4256,
+ "tong_don": 99441,
+ "don_delivered": 96478,
+ "ty_le_delivered_pct": 97.02,
+ "thang_dinh": "11/2017",
+ "dt_thang_dinh": 987765.0,
+ "don_thang_dinh": 7289,
+ "mom_thang_dinh_pct": 52.4,
+ "yoy_dt_pct": 141.1,
+ "yoy_don_pct": 139.9,
+ "tong_dt_window": 13181027.0,
+ "tong_don_window": 96211,
+ "aov_window": 137.0,
+ "dt_2017_01": 111798.0,
+ "dt_2018_08": 838577.0,
+ "thu_nhieu_nhat": "Thứ 2",
+ "thu_it_nhat": "Thứ 7",
+ "gio_cao_diem": 16,
+ "ty_le_10_22h_pct": 81.5,
+ "ty_le_cuoi_tuan_pct": 23.0,
+ "so_nganh": 74,
+ "n_nganh_80pct": 18,
+ "top10": [
+  [
+   "Sức khỏe & làm đẹp",
+   1233132.0,
+   9.3,
+   8647,
+   130.3
+  ],
+  [
+   "Đồng hồ & quà tặng",
+   1166177.0,
+   8.8,
+   5495,
+   199.0
+  ],
+  [
+   "Giường - bàn - phòng tắm",
+   1023435.0,
+   7.7,
+   9272,
+   93.4
+  ],
+  [
+   "Thể thao & giải trí",
+   954853.0,
+   7.2,
+   7530,
+   113.3
+  ],
+  [
+   "Phụ kiện máy tính",
+   888725.0,
+   6.7,
+   6530,
+   116.3
+  ],
+  [
+   "Nội thất & trang trí",
+   711928.0,
+   5.4,
+   6307,
+   87.2
+  ],
+  [
+   "Đồ gia dụng",
+   615629.0,
+   4.7,
+   5743,
+   90.6
+  ],
+  [
+   "Đồ độc đáo",
+   610204.0,
+   4.6,
+   3559,
+   164.1
+  ],
+  [
+   "Ô tô",
+   578967.0,
+   4.4,
+   3810,
+   139.8
+  ],
+  [
+   "Đồ chơi",
+   471286.0,
+   3.6,
+   3804,
+   116.9
+  ]
+ ],
+ "top10_ty_trong_pct": 62.4,
+ "top1_ten": "Sức khỏe & làm đẹp",
+ "top1_pct": 9.3,
+ "nganh_gia_cao": [
+  [
+   "Nhạc cụ",
+   283.1
+  ],
+  [
+   "Điện gia dụng nhỏ",
+   277.7
+  ],
+  [
+   "Đồng hồ & quà tặng",
+   199.0
+  ],
+  [
+   "Đồ độc đáo",
+   164.1
+  ],
+  [
+   "Nội thất văn phòng",
+   160.8
+  ]
+ ],
+ "dinh_nganh": {
+  "Sức khỏe & làm đẹp": "08/2018",
+  "Đồng hồ & quà tặng": "05/2018",
+  "Giường - bàn - phòng tắm": "11/2017",
+  "Thể thao & giải trí": "01/2018",
+  "Phụ kiện máy tính": "02/2018"
+ },
+ "pt": [
+  [
+   "credit_card",
+   72785,
+   75.4,
+   78.4,
+   166.2,
+   109.4
+  ],
+  [
+   "boleto",
+   19191,
+   19.9,
+   18.0,
+   144.3,
+   93.8
+  ],
+  [
+   "voucher",
+   3017,
+   3.1,
+   2.3,
+   115.7,
+   82.0
+  ],
+  [
+   "debit_card",
+   1484,
+   1.5,
+   1.4,
+   140.4,
+   89.6
+  ]
+ ],
+ "don_nhieu_pt_pct": 2.26,
+ "ins": [
+  [
+   "1 kỳ",
+   23330,
+   32.1,
+   100.5
+  ],
+  [
+   "2-3 kỳ",
+   22011,
+   30.2,
+   134.9
+  ],
+  [
+   "4-6 kỳ",
+   15693,
+   21.6,
+   181.7
+  ],
+  [
+   "7-10 kỳ",
+   11422,
+   15.7,
+   333.5
+  ],
+  [
+   ">10 kỳ",
+   329,
+   0.5,
+   361.5
+  ]
+ ],
+ "credit_tra_gop_pct": 67.9,
+ "credit_ky_tb": 3.55,
+ "boleto_min": 17.6,
+ "boleto_max": 25.1,
+ "giao_tb": 12.6,
+ "giao_trung_vi": 10.2,
+ "giao_p90": 23.1,
+ "giao_max": 210.0,
+ "du_kien_tb": 23.7,
+ "ty_le_tre_pct": 6.77,
+ "tre_tb_ngay": 10.6,
+ "som_hon_tb": 11.9,
+ "duyet_tb_gio": 10.3,
+ "carrier_tb": 2.9,
+ "transit_tb": 9.3,
+ "n_giao_hop_le": 96470,
+ "ngoai_le_giao_n": 4896,
+ "ngoai_le_giao_pct": 5.08,
+ "vung": [
+  [
+   "Đông Nam",
+   66193,
+   10.8,
+   6.1,
+   19.8
+  ],
+  [
+   "Nam",
+   13813,
+   14.0,
+   5.9,
+   24.3
+  ],
+  [
+   "Trung Tây",
+   5624,
+   15.0,
+   6.5,
+   26.5
+  ],
+  [
+   "Đông Bắc",
+   9044,
+   20.0,
+   12.7,
+   36.0
+  ],
+  [
+   "Bắc",
+   1796,
+   22.6,
+   8.6,
+   41.3
+  ]
+ ],
+ "bang_cham": [
+  [
+   "AL",
+   24.5,
+   21.4
+  ],
+  [
+   "PA",
+   23.8,
+   11.2
+  ],
+  [
+   "MA",
+   21.6,
+   17.4
+  ],
+  [
+   "SE",
+   21.5,
+   15.2
+  ],
+  [
+   "CE",
+   21.3,
+   13.8
+  ],
+  [
+   "PB",
+   20.4,
+   10.4
+  ],
+  [
+   "PI",
+   19.5,
+   13.9
+  ],
+  [
+   "BA",
+   19.3,
+   12.2
+  ]
+ ],
+ "bang_nhanh": [
+  [
+   "MG",
+   12.0,
+   4.6
+  ],
+  [
+   "PR",
+   12.0,
+   4.0
+  ],
+  [
+   "SP",
+   8.8,
+   4.5
+  ]
+ ],
+ "bang_tre_cao": [
+  [
+   "AL",
+   21.4
+  ],
+  [
+   "MA",
+   17.4
+  ],
+  [
+   "SE",
+   15.2
+  ]
+ ],
+ "n_bang_loc": 21,
+ "nhom_giao": [
+  [
+   "<= 7 ngày",
+   26046,
+   27.0,
+   23.7,
+   120.3,
+   16.9,
+   4.42
+  ],
+  [
+   "8-14 ngày",
+   40212,
+   41.7,
+   41.8,
+   137.4,
+   22.9,
+   4.31
+  ],
+  [
+   "15-21 ngày",
+   17713,
+   18.4,
+   19.7,
+   147.2,
+   26.4,
+   4.14
+  ],
+  [
+   "22-30 ngày",
+   7949,
+   8.2,
+   9.0,
+   150.2,
+   28.9,
+   3.61
+  ],
+  [
+   "> 30 ngày",
+   4550,
+   4.7,
+   5.8,
+   167.2,
+   30.5,
+   2.25
+  ]
+ ],
+ "thang_tre_nhat": "03/2018",
+ "tre_nhat_pct": 19.0,
+ "tre_thang_thap_pct": 1.2,
+ "tre_thang_thap": "06/2018",
+ "tre_11_2017": 12.4,
+ "tre_03_2018": 19.0,
+ "rv": [
+  [
+   "Đúng/sớm hạn",
+   89443,
+   4.29,
+   9.3
+  ],
+  [
+   "Trễ 1-3 ngày",
+   1852,
+   3.29,
+   32.1
+  ],
+  [
+   "Trễ 4-7 ngày",
+   1748,
+   2.1,
+   67.7
+  ],
+  [
+   "Trễ > 7 ngày",
+   2781,
+   1.7,
+   79.3
+  ]
+ ],
+ "diem_tb_chung": 4.16,
+ "bang_dt": [
+  [
+   "SP",
+   5067633.0,
+   38.3,
+   13.9
+  ],
+  [
+   "RJ",
+   1759651.0,
+   13.3,
+   16.8
+  ],
+  [
+   "MG",
+   1552482.0,
+   11.7,
+   17.2
+  ],
+  [
+   "RS",
+   728897.0,
+   5.5,
+   18.2
+  ],
+  [
+   "PR",
+   666064.0,
+   5.0,
+   17.4
+  ]
+ ],
+ "sp_pct": 38.3,
+ "top3_bang_pct": 63.4,
+ "ship_tb_pct": 16.6,
+ "log": [
+  [
+   "orders",
+   "5 cột ngày đang là chuỗi (str/object)",
+   99441,
+   "ép sang datetime64 bằng pd.to_datetime (mỗi cột 99.441 giá trị)"
+  ],
+  [
+   "orders",
+   "delivered nhưng thiếu ngày giao thực tế",
+   8,
+   "giữ đơn trong phân tích doanh thu, loại khỏi phân tích thời gian giao hàng"
+  ],
+  [
+   "orders",
+   "đơn chưa/không hoàn tất (shipped, canceled, ...)",
+   2963,
+   "không tính vào doanh thu; chỉ phân tích đơn delivered"
+  ],
+  [
+   "orders",
+   "khóa order_id trùng",
+   0,
+   "không có - khóa chính hợp lệ"
+  ],
+  [
+   "payments",
+   "payment_type = not_defined (giá trị 0, đơn hủy)",
+   3,
+   "loại bỏ các dòng này"
+  ],
+  [
+   "payments",
+   "payment_installments = 0",
+   2,
+   "gán = 1 (trả một lần)"
+  ],
+  [
+   "payments",
+   "payment_value = 0 (voucher)",
+   6,
+   "giữ nguyên - voucher 0đ không ảnh hưởng tổng tiền"
+  ],
+  [
+   "items",
+   "price <= 0 hoặc freight < 0",
+   0,
+   "không có"
+  ],
+  [
+   "items",
+   "freight_value = 0 (miễn phí vận chuyển)",
+   383,
+   "giữ nguyên - là chương trình free ship thật"
+  ],
+  [
+   "products",
+   "thiếu product_category_name",
+   610,
+   "gán nhãn 'unknown'"
+  ],
+  [
+   "products",
+   "ngành hàng chưa có bản dịch",
+   2,
+   "bổ sung thủ công vào bảng dịch"
+  ],
+  [
+   "customers",
+   "customer_id trùng",
+   0,
+   "không có; lưu ý customer_id là mã theo đơn, customer_unique_id mới là khách thật"
+  ],
+  [
+   "reviews",
+   "một đơn có nhiều đánh giá (trùng order_id)",
+   551,
+   "giữ đánh giá mới nhất mỗi đơn"
+  ],
+  [
+   "items/payments",
+   "ngoại lệ số tiền theo IQR (price, freight, payment_value)",
+   28021,
+   "GIỮ LẠI vì là đơn giá trị cao có thật (đồ nội thất, thiết bị); dùng trung vị và thang log khi mô tả"
+  ],
+  [
+   "orders",
+   "chặng 'carrier_days' âm: giao cho ĐVVC trước khi đơn được duyệt",
+   1350,
+   "đặt carrier_days = NaN cho các đơn này (giữ lại delivery_days)"
+  ],
+  [
+   "orders",
+   "chặng 'transit_days' âm: khách nhận hàng trước khi ĐVVC lấy hàng",
+   23,
+   "đặt transit_days = NaN cho các đơn này (giữ lại delivery_days)"
+  ],
+  [
+   "orders",
+   "thời gian giao hàng quá dài (ngoại lệ IQR)",
+   4896,
+   "giữ lại (phản ánh sự cố giao hàng thật); dùng trung vị/P90"
+  ],
+  [
+   "orders",
+   "đơn delivered thiếu/sai ngày giao (loại khỏi phân tích thời gian giao)",
+   8,
+   "gắn cờ valid_delivery = False"
+  ]
+ ],
+ "tong_quan": [
+  [
+   "orders",
+   99441,
+   8,
+   4908,
+   0,
+   55.5
+  ],
+  [
+   "items",
+   112650,
+   7,
+   0,
+   0,
+   37.7
+  ],
+  [
+   "payments",
+   103886,
+   5,
+   0,
+   0,
+   17.0
+  ],
+  [
+   "customers",
+   99441,
+   5,
+   0,
+   0,
+   27.9
+  ],
+  [
+   "products",
+   32951,
+   9,
+   2448,
+   0,
+   6.6
+  ],
+  [
+   "reviews",
+   99224,
+   7,
+   145903,
+   0,
+   41.0
+  ],
+  [
+   "translation",
+   71,
+   2,
+   0,
+   0,
+   0.0
+  ]
+ ],
+ "so_don_xu_ly": 96478
+}

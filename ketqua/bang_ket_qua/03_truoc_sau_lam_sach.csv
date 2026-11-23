@@ -1,0 +1,9 @@
+﻿,Trước xử lý,Sau xử lý,Thay đổi
+orders: số cột ngày kiểu datetime,0,5,5
+payments: số dòng,103886,103883,-3
+payments: dòng not_defined,3,0,-3
+payments: dòng installments = 0,2,0,-2
+reviews: số dòng,99224,98673,-551
+reviews: đơn có nhiều hơn 1 đánh giá,551,0,-551
+products: thiếu tên ngành hàng (NaN),610,0,-610
+products: ngành hàng chưa có bản dịch,2,0,-2
